@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "... DONE ..."
+echo "Compilation Time:"
+g++ -s -O2 -ftime-report $1 -o result.exe -Wall -Wextra -std=c++11
+echo ""
+echo "Execution Time:"
+time ./result.exe ; echo Process returned $?

@@ -7,7 +7,7 @@ using pii = pair<int, int>;
 using pll = pair<ll, ll>;
 using vi = vector<int>;
 
-#define INF MAX_INT
+#define INF INT_MAX 
 #define all(x) x.begin(), x.end()
 #define pb(x) push_back(x)
 #define mp(x, y) make_pair(x, y)

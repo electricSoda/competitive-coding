@@ -51,6 +51,9 @@ If you're on mac use `clang -o result.exe $1 -Wall -Wextra -O2 -std=c++11` inste
 #### Running with Crun
 On Linux and macOS do "chmod u+x crun" first.
 Then just simply do `./crun fileName.cpp` and it will automatically compile and run the program.
+If you don't want to have to paste the crun script everywhere, you can set it as a PATH variable by going to the "~" directory,
+then making a file called ".bashrc" (for Git Bash only), and then at the top of the file type:
+`PATH=$PATH:/c/path/to/the/competitive-coding/folder`. Then you can use crun anywhere. ;D
 
 ### Time
 I also have a small script to check how long the execution time took so you can see if your program fits within the 

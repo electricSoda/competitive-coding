@@ -2,8 +2,8 @@
 
 - I use C++11 (might switch to 17)
 - Mingw-w64 for G++ (CLang for macOS when I'm using mac)
-- I use Git Bash's vim (I know I'm weird) but the packages I use should still apply
-  - I'm pretty sure Git Bash uses NeoVim
+    - Installation for my architecture (windows 64 bit) here: [sourceforge.net](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/gcc-4.8-release/) 
+- I use Git Bash's NeoVim (I know I'm weird) but the packages I use should still apply
 
 
 ## Vim
@@ -39,7 +39,7 @@ I use a small template file so I don't have to retype macros. I use this file fo
 ### <bits/stdc++.h>
 I use this header so I don't have to manually include header files. G++ doesn't automatically come with this header file, so here are some workarounds.
 **Mac**: [Github file](https://github.com/tekfyl/bits-stdc-.h-for-mac/blob/master/stdc%2B%2B.h). Create a folder in `/usr/local/include` called "bits", and then put the file in there named "stdc++.h"
-**Windows**: IDK man just search it up.
+**Windows**: Go to this path: `/c/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits` and then add the "stdc++.h" file in there from the link for mac above. 
 
 ## Scripts
 Small scripts I made to help with coding.

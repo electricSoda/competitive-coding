@@ -34,7 +34,9 @@ so that vim auto closes brackets.
 
 
 ### TEMPLATE.cpp
-I use a small template file so I don't have to retype macros. I use this file for every single solution to problem sets. Modify it however you want to your preference. The `de()` function is used  to debug and pretty print things in the console. It is overloaded to support multiple variables, arrays, vectors, and maps so far.
+I use a small template file so I don't have to retype macros. I use this file for every single solution to problem sets. Modify it however you want to your preference.\
+The debug wasn't made by me. Original source: [ncduy0303.github.io](https://ncduy0303.github.io/Competitive-Programming/Contest%20Template/main.cpp) 
+
 
 ### <bits/stdc++.h>
 I use this header so I don't have to manually include header files. G++ doesn't automatically come with this header file, so here are some workarounds.\

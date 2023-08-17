@@ -1,6 +1,19 @@
 #!/bin/sh
 
-g++ $1 -o ./result.exe -Wall -Wextra -O2 -std=c++11
+STASH_PATH="/c/teleport/USACO/competitive-coding/stash.txt"
+
+if [ -z "$1" ]
+    then
+        FILE=`grep prev $STASH_PATH| cut -d'=' -f2`
+    else
+        FILE="$1"
+fi
+
+echo "FILE $FILE"
+
+sed -i "s/prev=.*/prev=$FILE/" $STASH_PATH
+
+g++ $FILE -o ./result.exe -Wall -Wextra -O2 -std=c++11
 echo "... DONE ..."
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 ./result

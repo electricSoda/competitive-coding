@@ -44,26 +44,30 @@ I use this header so I don't have to manually include header files. G++ doesn't 
 **Windows**: Go to this path: `/c/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits` and then add the "stdc++.h" file in there from the link for mac above.\ 
 
 ## Scripts
-Small scripts I made to help with coding.
+Small scripts I made to help with coding.\
+
+To use the scripts everywhere, you can set it as a PATH variable by going to the "~" directory,\
+then making a file called ".bashrc" (for Git Bash only), and then at the top of the file type:\
+`PATH=$PATH:/c/path/to/the/competitive-coding/folder`. Then you can use crun or any scripts in this folder anywhere. ;D
+
+
 ### Crun
 Basically I have a short script to compile and run automatically based
 on what compiler flags USACO uses. Also I use C++11 but you can change that to C++17\
 If you're on mac use `clang -o result.exe $1 -Wall -Wextra -O2 -std=c++11` instead so you can specify which version of C++ you want to use.
 
 #### Running with Crun
-On Linux and macOS do "chmod u+x crun" first.\
-Then just simply do `./crun fileName.cpp` and it will automatically compile and run the program.\
-If you don't want to have to paste the crun script everywhere, you can set it as a PATH variable by going to the "~" directory,
-then making a file called ".bashrc" (for Git Bash only), and then at the top of the file type:\
-`PATH=$PATH:/c/path/to/the/competitive-coding/folder`. Then you can use crun or any scripts in this folder anywhere. ;D
+On Linux and macOS do "chmod u+x crun" first inside the competitive-coding folder.\
+Then just simply do `crun fileName.cpp` and it will automatically compile and run the program.\
+Also, I've added it so you can just do `crun` and it will compile and run the previous program.\ In order to set this up, edit the crun file and change the `STASH_PATH` variable to the following path: `/c/path/to/the/competitive-coding/stash.txt`, so that it will store which program you ran last.
 
-### Time
+### CTime
 I also have a small script to check how long the execution time took so you can see if your program fits within the 
 time constraints.
 
-#### Timing with Time
-On Linux and macOS do "chmod u+x time" first.
-Then just simply do `./time fileName.cpp` and it will show the compilation time and the execution time of the program.
+#### Timing with CTime
+On Linux and macOS do "chmod u+x ctime" first within the competitive-coding folder.
+Then just simply do `ctime fileName.cpp` and it will show the compilation time and the execution time of the program.
 
 
 

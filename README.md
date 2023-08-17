@@ -59,7 +59,7 @@ If you're on mac use `clang -o result.exe $1 -Wall -Wextra -O2 -std=c++11` inste
 #### Running with Crun
 On Linux and macOS do "chmod u+x crun" first inside the competitive-coding folder.\
 Then just simply do `crun fileName.cpp` and it will automatically compile and run the program.\
-Also, I've added it so you can just do `crun` and it will compile and run the previous program.\
+Also, I've added it so you can just do `crun` and it will compile and run the previous program.
 
 In order to set this up, edit the crun file and change the `STASH_PATH` variable to the following path: `/c/path/to/the/competitive-coding/stash.txt`, so that it will store which program you ran last.
 

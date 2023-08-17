@@ -41,10 +41,10 @@ The debug wasn't made by me. Original source: [ncduy0303.github.io](https://ncdu
 ### <bits/stdc++.h>
 I use this header so I don't have to manually include header files. G++ doesn't automatically come with this header file, so here are some workarounds.\
 **Mac**: [Github file](https://github.com/tekfyl/bits-stdc-.h-for-mac/blob/master/stdc%2B%2B.h). Create a folder in `/usr/local/include` called "bits", and then put the file in there named "stdc++.h"\
-**Windows**: Go to this path: `/c/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits` and then add the "stdc++.h" file in there from the link for mac above.\ 
+**Windows**: Go to this path: `/c/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits` and then add the "stdc++.h" file in there from the link for mac above. 
 
 ## Scripts
-Small scripts I made to help with coding.\
+Small scripts I made to help with coding.
 
 To use the scripts everywhere, you can set it as a PATH variable by going to the "~" directory,\
 then making a file called ".bashrc" (for Git Bash only), and then at the top of the file type:\
@@ -59,7 +59,8 @@ If you're on mac use `clang -o result.exe $1 -Wall -Wextra -O2 -std=c++11` inste
 #### Running with Crun
 On Linux and macOS do "chmod u+x crun" first inside the competitive-coding folder.\
 Then just simply do `crun fileName.cpp` and it will automatically compile and run the program.\
-Also, I've added it so you can just do `crun` and it will compile and run the previous program.\ In order to set this up, edit the crun file and change the `STASH_PATH` variable to the following path: `/c/path/to/the/competitive-coding/stash.txt`, so that it will store which program you ran last.
+Also, I've added it so you can just do `crun` and it will compile and run the previous program.\  
+In order to set this up, edit the crun file and change the `STASH_PATH` variable to the following path: `/c/path/to/the/competitive-coding/stash.txt`, so that it will store which program you ran last.
 
 ### CTime
 I also have a small script to check how long the execution time took so you can see if your program fits within the 

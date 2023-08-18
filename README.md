@@ -3,7 +3,7 @@
 - I use C++11 (might switch to 17)
 - Mingw-w64 for G++ (CLang for macOS when I'm using mac)
     - Installation for my architecture (windows 64 bit) here: [sourceforge.net](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/gcc-4.8-release/) 
-- I use Git-For-Window's Built In Terminal's NeoVim (I know I'm weird) but the packages I use should still apply
+- I use Git-For-Window's Built In Terminal's Vi IMproved (I know I'm weird) but the packages I use should still apply
 
 
 ## Vim

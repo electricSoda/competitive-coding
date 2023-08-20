@@ -85,9 +85,9 @@ TODO:
 - [ ] Make a segmentation fault debugger (using gdb)
 g++ script.cpp -o ./a.out -g
 
-gdb\ 
- file a.out\
- run\
+gdb <br />
+ file a.out <br />
+ run <br />
 
 - [ ] Make a script to directly copy contents of code
 - [ ] Check how much memory is allocated when running the script and if it goes over the comp limit.

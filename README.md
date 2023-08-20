@@ -76,3 +76,16 @@ Then just simply do `ctime fileName.cpp` and it will show the compilation time a
 
 
 Happy Coding! (more like head banging why is my code not working i hate my life coding :D)
+
+
+
+TODO:
+- [ ] Make a segmentation fault debugger (using gdb)
+g++ script.cpp -o ./a.out -g
+
+gdb 
+ file a.out
+ run
+
+- [ ] Make a script to directly copy contents of code
+- [ ] Check how much memory is allocated when running the script and if it goes over the comp limit.

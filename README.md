@@ -61,8 +61,9 @@ If you're on mac use `clang -o result.exe $1 -Wall -Wextra -O2 -std=c++11` inste
 #### Running with Crun
 On Linux and macOS do "chmod u+x crun" first inside the competitive-coding folder.\
 Then just simply do `crun fileName.cpp` and it will automatically compile and run the program.\
-Also, I've added it so you can just do `crun` and it will compile and run the previous program.
 
+
+Also, I've added it so you can just do `crun` and it will compile and run the previous program.  
 In order to set this up, edit the crun file and change the `STASH_PATH` variable to the following path: `/c/path/to/the/competitive-coding/stash.txt`, so that it will store which program you ran last.
 
 ### CTime
@@ -73,11 +74,17 @@ time constraints.
 On Linux and macOS do "chmod u+x ctime" first within the competitive-coding folder.
 Then just simply do `ctime fileName.cpp` and it will show the compilation time and the execution time of the program.
 
+### CPY
+Another small script that copies the contents of a file to your clipboard.
+
+#### Timing with CPY
+On Linux and macOS do "chmod u+x cpy" first within the competitive-coding folder, and you will also need to install `xclip` from the web and change `echo "$CONTENTS"|clip.exe` with `echo "$CONTENTS"|xclip` so it pipes to your clipboard.  
+Then just simply do `cpy fileName.cpp` and it will copy it to your clipboard.  
 
 
 
 
-Happy Coding! (more like head banging why is my code not working i hate my life coding :D)
+Happy Coding! 
 
 
 
@@ -89,5 +96,5 @@ gdb <br />
  file a.out <br />
  run <br />
 
-- [ ] Make a script to directly copy contents of code
+- [x] Make a script to directly copy contents of code
 - [ ] Check how much memory is allocated when running the script and if it goes over the comp limit.

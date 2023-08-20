@@ -1,0 +1,7 @@
+#!/bin/sh
+
+g++ $1 -o ./a.out -g
+
+gdb -ex run ./a.out 
+
+

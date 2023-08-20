@@ -81,6 +81,12 @@ Another small script that copies the contents of a file to your clipboard.
 On Linux and macOS do "chmod u+x cpy" first within the competitive-coding folder, and you will also need to install `xclip` from the web and change `echo "$CONTENTS"|clip.exe` with `echo "$CONTENTS"|xclip` so it pipes to your clipboard.  
 Then just simply do `cpy fileName.cpp` and it will copy it to your clipboard.  
 
+### SEG
+Another small script that debugs your segmentation faults or anything else related to your C++ program.
+
+#### Timing with SEG
+On Linux and macOS do "chmod u+x seg" first within the competitive-coding folder.
+Then just simply do `seg fileName.cpp` and it will automatically open up GDB's debugger and run your program. Then you can input your problem's input text and see which line caused the segmentation fault or anything else. Then just do Ctrl+C 2 times and then type `quit` to exit the debugger.
 
 
 
@@ -89,12 +95,6 @@ Happy Coding!
 
 
 TODO:
-- [ ] Make a segmentation fault debugger (using gdb)
-g++ script.cpp -o ./a.out -g
-
-gdb <br />
- file a.out <br />
- run <br />
-
+- [x] Make a segmentation fault debugger (using gdb)
 - [x] Make a script to directly copy contents of code
 - [ ] Check how much memory is allocated when running the script and if it goes over the comp limit.

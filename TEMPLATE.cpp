@@ -19,6 +19,9 @@ using vi = vector<int>;
 #define sz(x) (int((x).size()))
 
 // Debug
+template<typename T> void red(T txt) {cout << "\x1B[31m" << txt << "\033[0m";} // ANSI escape codes
+template<typename T> void yellow(T txt) {cout << "\x1B[33m" << txt << "\033[0m";}
+template<typename T> void blue(T txt) {cout << "\x1B[34m" << txt << "\033[0m";}
 template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
 template<typename T_container, typename T = typename enable_if<!is_same<T_container, string>::value, typename T_container::value_type>::type> ostream& operator<<(ostream &os, const T_container &v) { os << '{'; string sep; for (const T &x : v) os << sep << x, sep = ", "; return os << '}'; }
 void dbg() { cout << nl; }

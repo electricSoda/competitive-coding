@@ -3,7 +3,9 @@
 - I use C++11 (might switch to 17)
 - Mingw-w64 for G++ (CLang for macOS when I'm using mac)
     - Installation for my architecture (windows 64 bit) here: [sourceforge.net](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/rubenvb/gcc-4.8-release/) 
-- I use Git-For-Window's Built In Terminal's Vi IMproved (I know I'm weird) but the packages I use should still apply
+- I use Git-For-Window's Built In Terminal's Vi IMproved but the packages I use should still apply to Linux or Mac terminals
+    - My foreground color is rgb(251, 251, 251)
+    - My background color is rgb(22, 50, 47)
 
 
 ## Vim
@@ -83,9 +85,9 @@ TODO:
 - [ ] Make a segmentation fault debugger (using gdb)
 g++ script.cpp -o ./a.out -g
 
-gdb 
- file a.out
- run
+gdb\ 
+ file a.out\
+ run\
 
 - [ ] Make a script to directly copy contents of code
 - [ ] Check how much memory is allocated when running the script and if it goes over the comp limit.

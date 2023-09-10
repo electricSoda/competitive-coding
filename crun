@@ -1,6 +1,7 @@
 #!/bin/sh
 
-STASH_PATH="/Users/electricSoda/toolsCP/stash.txt"
+STASH="stash.txt"
+STASH_PATH="/path/to/this/folder/${STASH}"
 
 if [ -z "$1" ]
     then
@@ -11,11 +12,11 @@ fi
 
 echo "FILE $FILE"
 
-sed -i '' -e "s/prev=.*/prev=$FILE/" $STASH_PATH
+sed -i "s/prev=.*/prev=$FILE/" $STASH_PATH
 
 g++ $FILE -o ./result.exe -Wall -Wextra -O2 -std=c++11
 echo "... DONE ..."
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
-./result.exe
+./result
 
 

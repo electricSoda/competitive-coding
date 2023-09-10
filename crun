@@ -11,11 +11,11 @@ fi
 
 echo "FILE $FILE"
 
-sed -i "s/prev=.*/prev=$FILE/" $STASH_PATH
+sed -i '' -e "s/prev=.*/prev=$FILE/" $STASH_PATH
 
 g++ $FILE -o ./result.exe -Wall -Wextra -O2 -std=c++11
 echo "... DONE ..."
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
-./result
+./result.exe
 
 

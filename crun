@@ -1,6 +1,6 @@
 #!/bin/sh
 
-STASH_PATH="/c/teleport/USACO/competitive-coding/stash.txt"
+STASH_PATH="/Users/electricSoda/toolsCP/stash.txt"
 
 if [ -z "$1" ]
     then

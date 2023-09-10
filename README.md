@@ -51,7 +51,7 @@ Small scripts I made to help with coding.
 To use the scripts everywhere, you can set it as a PATH variable by going to the "~" directory,\
 then making a file called ".bashrc" (for Git Bash only), and then at the top of the file type:\
 `PATH=$PATH:/c/path/to/the/competitive-coding/folder`. Then you can use crun or any scripts in this folder anywhere. ;D
-
+Make sure to do "chmod u+x file" for every script on mac.
 
 ### Crun
 Basically I have a short script to compile and run automatically based

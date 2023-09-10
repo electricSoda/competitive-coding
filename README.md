@@ -27,6 +27,7 @@ Also for the theme I do:
     
     set t_Co=256
     set cursorline
+    set r=0
     colorscheme onehalflight
     let g:airline_theme='onehalfdark'
 

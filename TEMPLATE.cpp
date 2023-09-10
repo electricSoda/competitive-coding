@@ -22,7 +22,7 @@ template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, 
 template<typename T_container, typename T = typename enable_if<!is_same<T_container, string>::value, typename T_container::value_type>::type> ostream& operator<<(ostream &os, const T_container &v) { os << '{'; string sep; for (const T &x : v) os << sep << x, sep = ", "; return os << '}'; }
 void dbg() { cout << nl; }
 template<typename Head, typename... Tail> void dbg(Head H, Tail... T) { cout << H << ' '; dbg(T...); }
-#define de(...) cerr << "(" << #__VA_ARGS__ << "): ", dbg_out(__VA_ARGS__)
+#define de(...) cerr << "(" << #__VA_ARGS__ << "): ", dbg(__VA_ARGS__)
 #define FOR(...) VA_MACRO(FOR, __VA_ARGS__)
 #define FOR1(variable, n) for(int variable = 0; variable < n; ++variable )
 #define FOR2(variable, x, n) for(int variable = x; variable < n; ++variable )

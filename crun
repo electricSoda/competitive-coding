@@ -1,7 +1,7 @@
 #!/bin/sh
 
 STASH="stash.txt"
-STASH_PATH="/path/to/this/folder/${STASH}"
+STASH_PATH="/c/teleport/USACO/competitive-coding/${STASH}"
 
 if [ -z "$1" ]
     then

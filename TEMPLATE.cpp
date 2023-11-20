@@ -33,6 +33,9 @@ template<typename Head, typename... Tail> void dbg(Head H, Tail... T) { cout << 
 /*----------------------------------------------------------------*/
 
 int main(void) {
+        ios::sync_with_stdio(false);
+        cin.tie(NULL);
+
 	int n;
 	cin >> n;
 }

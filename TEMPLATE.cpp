@@ -23,9 +23,11 @@ template<typename T_container, typename T = typename enable_if<!is_same<T_contai
 void dbg() { cout << nl; }
 template<typename Head, typename... Tail> void dbg(Head H, Tail... T) { cout << H << ' '; dbg(T...); }
 #define de(...) cerr << "(" << #__VA_ARGS__ << "): ", dbg(__VA_ARGS__)
-#define FOR(...) VA_MACRO(FOR, __VA_ARGS__)
-#define FOR1(variable, n) for(int variable = 0; variable < n; ++variable )
-#define FOR2(variable, x, n) for(int variable = x; variable < n; ++variable )
+#define GET_MACRO(_1,_2,_3,FOR,...) FOR
+#define FOR(...) GET_MACRO(__VA_ARGS__, FOR3, FOR2)(__VA_ARGS__)
+#define FOR2(variable, n) for(int variable = 0; variable < n; ++variable )
+#define FOR3(variable, x, n) for(int variable = x; variable < n; ++variable )
+
 
 
 /*----------------------------------------------------------------*/
